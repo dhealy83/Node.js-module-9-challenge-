@@ -1,46 +1,63 @@
 // TODO: Include packages needed for this application
-const inquirer = require('inquirer');
+const inquirer = require("inquirer");
 const fs = require("fs");
 
 // TODO: Create an array of questions for user input
+const questions = [];
+
+// TODO: Create a function to write README file
+function writeToFile(fileName, data) {}
+
 inquirer
   .prompt([
     {
       type: "input",
-      message: "Name?",
-      name: "userName",
+      message: "Title",
+      name: "Title",
     },
     {
       type: "input",
-      message: "City, State?",
-      name: "city",
+      message: "Description",
+      name: "Description",
     },
     {
       type: "input",
-      message: "Bio Info.",
-      name: "bio",
+      message: "URL Directory",
+      name: "URLs",
     },
     {
       type: "input",
-      message: "LinkedIn URL?",
-      name: "linkedin",
+      message: "Usage",
+      name: "Usage",
     },
     {
       type: "input",
       message: "GitHub URL?",
       name: "github",
     },
+    {
+      type: "input",
+      message: "LinkedIn",
+      name: "LinkedIn",
+    },
   ])
   .then((data) => {
     console.log(data);
   });
+// TODO: Create a function to initialize app
+// function init() {}
+
+// Function call to initialize app
+init();
+//
+
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {}
 fs.writeFile("./index.html", genHTML(data), (err) =>
   err ? console.log(err) : console.log("success!")
 );
 function genHTML(data) {
-    return `<!DOCTYPE html>
+  return `<!DOCTYPE html>
       <html lang="en">
       <head>
           <meta charset="UTF-8">
@@ -71,10 +88,4 @@ function genHTML(data) {
           </div>
       </body>
       </html>`;
-
-      
-// TODO: Create a function to initialize app
-function init() {}
-
-// Function call to initialize app
-init();
+}
