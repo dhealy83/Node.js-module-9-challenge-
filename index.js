@@ -55,7 +55,7 @@ inquirer
     {
       type: "input",
       message: "LinkedIn",
-      name: "linkedIn",
+      name: "linkedin",
     },
   ])
   .then((data) => {

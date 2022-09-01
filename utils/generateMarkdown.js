@@ -91,6 +91,12 @@ function generateMarkdown(data) {
   ## URL Directory 
 
   ${data.URLs}
+
+  ## GitHub URL
+  ${data.github}
+
+  ## LinkedIn URL
+  ${data.linkedin}
 `;
 }
 

@@ -38,3 +38,11 @@ N/A
 ## URL Directory
 
 https://dhealy83.github.io/Node.js-module-9-challenge-/
+
+## GitHub URL
+
+https://github.com/dhealy83/Node.js-module-9-challenge-
+
+## LinkedIn URL
+
+https://www.linkedin.com/in/david-healy-931583130/
