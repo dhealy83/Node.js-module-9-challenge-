@@ -24,12 +24,13 @@ inquirer
     {
       type: "input",
       message: "Usage",
-      name: "Usage",
+      name: "usage",
     },
     {
-      type: "input",
+      type: "list",
       message: "License",
       name: "license",
+      choices: ["Apache", "Boost", "Creative Commons"],
     },
     {
       type: "input",
@@ -59,19 +60,8 @@ inquirer
   ])
   .then((data) => {
     const filename = `readme.md`;
-    // console.log(data);
-    // TODO: Create a function to write README file
-    // function genHTML(data) {
+
     fs.writeFile("./gen-readme/mock.md", generateMarkDown(data), (err) =>
       err ? console.log(err) : console.log("success!")
     );
   });
-
-// TODO: Create a function to initialize app
-// function init() {}
-
-// Function call to initialize app
-// init();
-//
-
-// TODO: Create a function to write README file
